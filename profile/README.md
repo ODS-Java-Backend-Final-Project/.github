@@ -15,7 +15,7 @@ The application includes:
 
 
 ## 🏗️ Microservice Architecture Overview
-
+```
                             +----------------------+
                             |     API Gateway      |
                             |  (Spring Cloud GW)   |
@@ -28,7 +28,7 @@ The application includes:
 | Manages boar           | | Manages events linked  | | Service registry          |
 | games (CRUD)           | | to board games (CRUD)  | |                           |
 +------------------------+ +------------------------+ +---------------------------+
-         |
+```
 
 Uses Feign Client to fetch board game details
 
@@ -42,7 +42,7 @@ Uses Feign Client to fetch board game details
 ### 1. Clone the Repositories you can find in this organization, for example the event-service:
 ```bash
 git clone https://github.com/ODS-Java-Backend-Final-Project/event-service.git
-cd event-service
+cd event-service ```
 
 2. Run MySQL Database
 
