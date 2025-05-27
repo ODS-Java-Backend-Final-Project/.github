@@ -28,6 +28,7 @@ The application includes:
 | Manages boar           | | Manages events linked  | | Service registry          |
 | games (CRUD)           | | to board games (CRUD)  | |                           |
 +------------------------+ +------------------------+ +---------------------------+
+         |
 
 Uses Feign Client to fetch board game details
 
