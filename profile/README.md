@@ -23,15 +23,13 @@ The application includes:
                                        |
      +---------------------------------+---------------------------------+
      |                                 |                                 |
++------------------------+ +------------------------+ +---------------------------+
+| board-game-service     | | event-service          | | discovery-service (Eureka)|
+| Manages boar           | | Manages events linked  | | Service registry          |
+| games (CRUD)           | | to board games (CRUD)  | |                           |
++------------------------+ +------------------------+ +---------------------------+
 
-+------------------+ +------------------------+ +------------------------+
-| board-game-service| | event-service | | discovery-service (Eureka)|
-| Manages board | | Manages events linked | | Service registry |
-| games (CRUD) | | to board games (CRUD) | | |
-+------------------+ +------------------------+ +------------------------+
-|
 Uses Feign Client to fetch board game details
-
 
 - **board-game-service**: Handles CRUD operations for board games.
 - **event-service**: Manages event creation and association with games.
