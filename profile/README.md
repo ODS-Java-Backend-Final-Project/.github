@@ -113,22 +113,22 @@ Technologies
 ## Main API Endpoints
 ### 📦 board-game-service
 
-GET    /api/board-games            → Get all board games
-GET    /api/board-games/{id}       → Get game by ID
-POST   /api/board-games            → Create a new board game
-PUT    /api/board-games/{id}       → Update board game
-DELETE /api/board-games/{id}       → Delete board game
+- GET    /api/board-games            → Get all board games
+- GET    /api/board-games/{id}       → Get game by ID
+- POST   /api/board-games            → Create a new board game
+- PUT    /api/board-games/{id}       → Update board game
+- DELETE /api/board-games/{id}       → Delete board game
 
 ---
 
 ### 🎉 event-service
 
-GET    /api/events                 → Get all events
-GET    /api/events/{id}            → Get event by ID
-GET    /api/events/board-game/{id} → Get events linked to a specific board game
-POST   /api/events                 → Create a new event
-PUT    /api/events/{id}            → Update event
-DELETE /api/events/{id}            → Delete event
+- GET    /api/events                 → Get all events
+- GET    /api/events/{id}            → Get event by ID
+- GET    /api/events/board-game/{id} → Get events linked to a specific board game
+- POST   /api/events                 → Create a new event
+- PUT    /api/events/{id}            → Update event
+- DELETE /api/events/{id}            → Delete event
 
 ---
 
@@ -177,4 +177,4 @@ Sample association queries between events and board games
 
 ## 👥 Team Members
 
-- 👩‍💻 Ángela Ruiz Rodríguez– Full Stack Developer – [@githubUser](https://github.com/anruiz-r)
+👩‍💻 Ángela Ruiz Rodríguez– Full Stack Developer – [@githubUser](https://github.com/anruiz-r)
