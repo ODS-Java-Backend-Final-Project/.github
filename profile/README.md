@@ -10,9 +10,13 @@ The application includes:
 - Cross-service communication using OpenFeign to associate games with events.
 - Service discovery with Eureka and centralized routing through an API Gateway.
 
+  ---
+
 ## 🧩 UML Class Diagram(s)
 
+![Class Diagram](src/main/profile/image.png)
 
+---
 
 ## 🏗️ Microservice Architecture Overview
 ```
@@ -36,6 +40,8 @@ Uses Feign Client to fetch board game details
 - **event-service**: Manages event creation and association with games.
 - **discovery-service**: Eureka Server for dynamic service registration and discovery.
 - **api-gateway**: Centralized entry point for routing API requests.
+
+  ---
 
 ## ⚙️ Setup Instructions for Local Development
 
@@ -88,19 +94,21 @@ cd event-service && mvn spring-boot:run
 ## 🧪 Technologies Used & Route Overview
 Technologies
 
-Java 21
+- Java 21
 
-Spring Boot
+- Spring Boot
 
-Spring Cloud (Eureka, Gateway, OpenFeign)
+- Spring Cloud (Eureka, Gateway, OpenFeign)
 
-Spring Data JPA + MySQL
+- Spring Data JPA + MySQL
 
-JUnit and Mockito
+- JUnit and Mockito
 
-Postman (for API testing)
+- Postman (for API testing)
 
-Lombok
+- Lombok
+
+---
 
 ## Main API Endpoints
 ### 📦 board-game-service
@@ -111,6 +119,8 @@ POST   /api/board-games            → Create a new board game
 PUT    /api/board-games/{id}       → Update board game
 DELETE /api/board-games/{id}       → Delete board game
 
+---
+
 ### 🎉 event-service
 
 GET    /api/events                 → Get all events
@@ -120,6 +130,8 @@ POST   /api/events                 → Create a new event
 PUT    /api/events/{id}            → Update event
 DELETE /api/events/{id}            → Delete event
 
+---
+
 ## 📬 Postman
 
 This project includes a Postman collection with:
@@ -128,26 +140,41 @@ CRUD requests for board games and events
 
 Sample association queries between events and board games
 
-Link: ![postman/GamesMeetUp](https://craftshop.postman.co/workspace/My-Workspace~64247626-9b1b-40cf-82e4-df164e396f63/collection/39061244-2cab27db-c263-421d-9531-48807903fba6?action=share&creator=39061244&active-environment=39061244-17713532-af05-4d0b-b877-cbb3f0d57619)
+---
+
+## 🔗 Extra Links
+
+- 📌 [Trello Board](https://trello.com/invite/b/682eed80f249d86099eefa49/ATTIe269e9e1b2238b0dd6024416451b4225C0838675/project2)
+- 🎤 [Presentation Slides](https://www.canva.com/design/DAGooqFPV2U/dyBi_pP_eTb9yjQ62BTB_w/edit)
+- 📫 [Postman Collection](https://craftshop.postman.co/workspace/My-Workspace~64247626-9b1b-40cf-82e4-df164e396f63/collection/39061244-2cab27db-c263-421d-9531-48807903fba6?action=share&creator=39061244)
+
+---
 
 ## 🚀 Future Work
 
-Add user-service with JWT authentication.
+- Add user-service with JWT authentication.
 
-Implement recommendation logic based on game style, mood, and player count.
+- Implement recommendation logic based on game style, mood, and player count.
 
-Build a front-end client in React connected via the API Gateway.
+- Build a front-end client in React connected via the API Gateway.
 
-Add Ateendees microservice
+- Add Ateendees microservice
 
+---
 ## 📚 References & Acknowledgments
 
-Spring Boot Documentation
+- Spring Boot Documentation
 
-Spring Cloud Netflix Eureka
+- Spring Cloud Netflix Eureka
 
-Spring Cloud Gateway
+- Spring Cloud Gateway
 
-Spring Cloud OpenFeign
+- Spring Cloud OpenFeign
 
-PlantUML
+- PlantUML
+
+---
+
+## 👥 Team Members
+
+- 👩‍💻 Ángela Ruiz Rodríguez– Full Stack Developer – [@githubUser](https://github.com/anruiz-r)
