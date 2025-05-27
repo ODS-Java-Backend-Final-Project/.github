@@ -46,11 +46,11 @@ git clone https://github.com/ODS-Java-Backend-Final-Project/event-service.git
 cd event-service
 ```
 
-2. Run MySQL Database
+###2. Run MySQL Database
 
 Make sure you have a MySQL instance running on port 3306
 
-3. Configuration & Ports
+###3. Configuration & Ports
 Service	Port	Description
 discovery-service	8761	Eureka Server
 api-gateway	8080	API Gateway (entry point)
@@ -58,7 +58,7 @@ board-game-service	8081	Board game CRUD
 event-service	8082	Event CRUD
 
 Sample application.properties:
-
+``` 
 spring.application.name=event-service
 spring.datasource.url=jdbc:mysql://localhost:3306/event_service
 spring.datasource.username=root
@@ -68,21 +68,21 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
 server.port=8082
-
-4. Build and Run the Application
+```
+###4. Build and Run the Application
 
 From the root directory:
 
-mvn clean install
+```mvn clean install ```
 
 Then start each service individually:
-
+```
 cd discovery-service && mvn spring-boot:run
 cd api-gateway && mvn spring-boot:run
 cd board-game-service && mvn spring-boot:run
 cd event-service && mvn spring-boot:run
-
-🧪 Technologies Used & Route Overview
+```
+##🧪 Technologies Used & Route Overview
 Technologies
 
     Java 21
@@ -99,8 +99,8 @@ Technologies
 
     Lombok
 
-Main API Endpoints
-📦 board-game-service
+##Main API Endpoints
+###📦 board-game-service
 
 GET    /api/board-games            → Get all board games
 GET    /api/board-games/{id}       → Get game by ID
@@ -108,7 +108,7 @@ POST   /api/board-games            → Create a new board game
 PUT    /api/board-games/{id}       → Update board game
 DELETE /api/board-games/{id}       → Delete board game
 
-🎉 event-service
+###🎉 event-service
 
 GET    /api/events                 → Get all events
 GET    /api/events/{id}            → Get event by ID
@@ -117,7 +117,7 @@ POST   /api/events                 → Create a new event
 PUT    /api/events/{id}            → Update event
 DELETE /api/events/{id}            → Delete event
 
-📬 Postman
+##📬 Postman
 
 This project includes a Postman collection with:
 
@@ -127,7 +127,7 @@ This project includes a Postman collection with:
 
     Link: [postman/GamesMeetUp](https://craftshop.postman.co/workspace/My-Workspace~64247626-9b1b-40cf-82e4-df164e396f63/collection/39061244-2cab27db-c263-421d-9531-48807903fba6?action=share&creator=39061244&active-environment=39061244-17713532-af05-4d0b-b877-cbb3f0d57619)
 
-🚀 Future Work
+##🚀 Future Work
 
     Add user-service with JWT authentication.
 
@@ -139,7 +139,7 @@ This project includes a Postman collection with:
 
     Add internationalization (i18n) support.
 
-📚 References & Acknowledgments
+##📚 References & Acknowledgments
 
     Spring Boot Documentation
 
