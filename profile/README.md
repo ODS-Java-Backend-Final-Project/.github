@@ -89,18 +89,18 @@ cd event-service && mvn spring-boot:run
 Technologies
 
    Java 21
-
-    Spring Boot
-
-    Spring Cloud (Eureka, Gateway, OpenFeign)
-
-    Spring Data JPA + MySQL
-
-    JUnit and Mockito
-
-    Postman (for API testing)
-
-    Lombok
+   
+   Spring Boot
+   
+   Spring Cloud (Eureka, Gateway, OpenFeign)
+   
+   Spring Data JPA + MySQL
+   
+   JUnit and Mockito
+   
+   Postman (for API testing)
+   
+   Lombok
 
 ## Main API Endpoints
 ### 📦 board-game-service
@@ -132,18 +132,17 @@ This project includes a Postman collection with:
     
 ## 🚀 Future Work
 
-    Add user-service with JWT authentication.
+  Add user-service with JWT authentication.
 
-    Implement recommendation logic based on game style, mood, and player count.
+  Implement recommendation logic based on game style, mood, and player count.
 
-    Build a front-end client in React connected via the API Gateway.
+  Build a front-end client in React connected via the API Gateway.
 
-    Add Ateendees microservice
-    
+  Add Ateendees microservice
 
 ## 📚 References & Acknowledgments
-    
-    Spring Boot Documentation
+
+  Spring Boot Documentation
 
     Spring Cloud Netflix Eureka
 
