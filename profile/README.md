@@ -14,7 +14,7 @@ The application includes:
 
 ## 🧩 UML Class Diagram(s)
 
-![Class Diagram](profile/image.png)
+![Class Diagram](./profile/image.png)
 
 ---
 
