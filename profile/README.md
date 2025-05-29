@@ -2,7 +2,7 @@
 
 ## 📝 Project Description
 
-**GameMeetUp** is a microservices-based application that allows users to explore a collection of board games and link them to social events based on their interests. The goal of the platform is to connect people with board games tailored to their mood, group size, theme preferences, or environment, and to facilitate event planning around those games.
+**GameMeetUp** is a microservices-based application that allows users to explore a collection of board games and link them to social events based on their interests. The goal of the platform is to connect people with board games tailored to their mood, group size, theme preferences, or environment, and to facilitate event planning and meeting new friends around those games.
 
 The application includes:
 - Management of board games.
@@ -14,7 +14,7 @@ The application includes:
 
 ## 🧩 UML Class Diagram(s)
 
-![Class Diagram](src/main/profile/image.png)
+![Class Diagram](profile/image.png)
 
 ---
 
@@ -29,7 +29,7 @@ The application includes:
      |                                 |                                 |
 +------------------------+ +------------------------+ +---------------------------+
 | board-game-service     | | event-service          | | discovery-service (Eureka)|
-| Manages boar           | | Manages events linked  | | Service registry          |
+| Manages board          | | Manages events linked  | | Service registry          |
 | games (CRUD)           | | to board games (CRUD)  | |                           |
 +------------------------+ +------------------------+ +---------------------------+
 ```
@@ -45,11 +45,29 @@ Uses Feign Client to fetch board game details
 
 ## ⚙️ Setup Instructions for Local Development
 
-### 1. Clone the Repositories you can find in this organization, for example the event-service:
+### 1. Clone the Repositories you can find in this organization:
 
+***Discovery Server***
+```bash
+git clone https://github.com/ODS-Java-Backend-Final-Project/discovery-server.git
+cd discovery-server
+```
+
+***Event Service***
 ```bash
 git clone https://github.com/ODS-Java-Backend-Final-Project/event-service.git
 cd event-service
+```
+***Board Game Service***
+```bash
+git clone https://github.com/ODS-Java-Backend-Final-Project/board-game-service.git
+cd board-game-service
+```
+
+***API Gateway***
+```bash
+git clone https://github.com/ODS-Java-Backend-Final-Project/api-gateway.git
+cd api-gateway
 ```
 
 ### 2. Run MySQL Database
@@ -158,7 +176,7 @@ Sample association queries between events and board games
 
 - Build a front-end client in React connected via the API Gateway.
 
-- Add Ateendees microservice
+- Add Attendees microservice
 
 ---
 ## 📚 References & Acknowledgments
